@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="/Style/reset.css" />
+    <link rel="stylesheet" href="/Style/font_package.css" />
+    <link rel="stylesheet" href="/Style/layout.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="#main"> PORTFOLIO </a>
+        <ul>
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="main section" id="main">
+        <div></div>
+        <div class="short">
+          <div class="short_top">안녕하세요</div>
+          <div class="short_bottom">소통과 협업으로 더 나아가는 <span class="point_text"> 퍼블리셔</span>, 배예진입니다.</div>
+        </div>
+    </div>
+    <div class="about section" id="about">
+      <div class="wrap">
+        <h1>ABOUT ME</h1>
+        <div class="container">
+          <div class="contentbox_left">
+            <div class="imagebox">
+              <img src="/image/test.jpg" />
+            </div>
+            <div class="more_btn">
+              <a href="###">자기소개서 더보기 →</a>
+            </div>
+          </div>
+          <div class="contentbox_right">
+            <ul class="info">
+              <li><span>Name : </span><span>배예진</span></li>
+              <li><span>Birth : </span><span>2000.12.20</span></li>
+              <li><span>Address : </span><span>인천광역시 연수구</span></li>
+              <li><span>Phone : </span><span>010-2387-2017</span></li>
+              <li><span>E-Mail : </span><span>dpwls4052@naver.com</span></li>
+            </ul>
+            <div class="skill">
+              <span>SKILL</span>
+              <ul>
+                <li>
+                  <img src="/image/html.png" />
+                  <span>HTML</span>
+                </li>
+                <li>
+                  <img src="/image/css.png" />
+                  <span>CSS</span>
+                </li>
+                <li>
+                  <img src="/image/js.png" />
+                  <span class="s_font">JavaScript</span>
+                </li>
+                <li>
+                  <img src="/image/figma.png" />
+                  <span>Figma</span>
+                </li>
+                <li>
+                  <img src="/image/photoshop.png" />
+                  <span class="s_font">Photoshop</span>
+                </li>
+                <li>
+                  <img src="/image/illustrator.png" />
+                  <span class="s_font">Illustrator</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio section" id="portfolio">
+      <div class="wrap">
+        <h1>PORTFOLIO</h1>
+        <div class="container portfolio_box">
+            <div onclick="kkpcModal()">
+                <div class="portfolio_imgbox">
+                  <a href="###">
+                    <img src="/image/add1.png" />
+                  </a>
+                  <img src="/image/kkpc.png" class="logo_img" />
+                </div>
+                <div class="portfolio_description">
+                  <p>금호석유화학</p>
+                  <p><span>#</span>PC <span>#</span>Mobile <span>#</span>반응형</p>
+                </div>
+              </div>
+          <div onclick="hyundaiModal()">
+            <div class="portfolio_imgbox">
+              <a href="###">
+                <img src="/image/hyundai_thumbnail.png" />
+              </a>
+              <img src="/image/hyundai.png" class="logo_img" />
+            </div>
+            <div class="portfolio_description">
+              <p>현대자동차</p>
+              <p><span>#</span>PC <span>#</span>KIOSK</p>
+            </div>
+          </div>
+          <div onclick="hyundaisteelModal()">
+            <div class="portfolio_imgbox">
+              <a href="###">
+                <img src="/image/hyundaisteel_thumbnail.png" />
+              </a>
+              <img src="/image/hyundaisteel.png" class="logo_img" />
+            </div>
+            <div class="portfolio_description">
+              <p>현대제철</p>
+              <p><span>#</span>PC <span>#</span>KIOSK</p>
+            </div>
+          </div>
+          <div onclick="gangWhaModal()">
+            <div class="portfolio_imgbox">
+              <a href="###">
+                <img src="/image/add1.png" />
+              </a>
+              <img src="/image/gangwha.png" class="logo_img" />
+            </div>
+            <div class="portfolio_description">
+              <p>강화도 민통선</p>
+              <p><span>#</span>PC <span>#</span>Mobile <span>#</span>반응형</p>
+            </div>
+          </div>
+          <div onclick="mizeModal()">
+            <div class="portfolio_imgbox">
+              <a href="###">
+                <img src="/image/add1.png" />
+              </a>
+              <img src="/image/mize.png" class="logo_img" />
+            </div>
+            <div class="portfolio_description">
+              <p>마이즈</p>
+              <p><span>#</span>PC <span>#</span>Mobile <span>#</span>반응형</p>
+            </div>
+          </div>
+          <div onclick="gweduModal()">
+            <div class="portfolio_imgbox">
+              <a href="###">
+                <img src="/image/add1.png" />
+              </a>
+              <img src="/image/hyundai_logo1.png" class="logo_img" />
+            </div>
+            <div class="portfolio_description">
+              <p>강원특별자치도교육청교육과학정보원</p>
+              <p><span>#</span>PC <span>#</span>KIOSK</p>
+            </div>
+          </div>
+          <div>
+            <div class="portfolio_imgbox">
+              <a href="###">
+                <img src="/image/add1.png" />
+              </a>
+              <img src="/image/airpart.png" class="logo_img" />
+            </div>
+            <div class="portfolio_description">
+              <p>대웅제약</p>
+              <p><span>#</span>PC</p>
+            </div>
+          </div>
+          <div>
+            <div class="portfolio_imgbox">
+              <a href="###">
+                <img src="/image/add1.png" />
+              </a>
+              <img src="/image/hyundai_logo1.png" class="logo_img" />
+            </div>
+            <div class="portfolio_description">
+              <p>CJ</p>
+              <p>
+                <span>#</span>PC <span>#</span>KIOSK <span>#</span>Mobile
+                <span>#</span>반응형
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="portfolio_imgbox">
+              <a href="###">
+                <img src="/image/add1.png" />
+              </a>
+              <img src="/image/hyundai_logo1.png" class="logo_img" />
+            </div>
+            <div class="portfolio_description">
+              <p>국군방첩사령부</p>
+              <p><span>#</span>APP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal site" id="Kkpc">
+        <div class="modal_container ">
+          <div class="modal_top">
+            <div class="modal_title">금호석유화학 방문예약시스템</div>
+            <div class="modal_content">
+              <div class="percent">
+                <div><span>담당업무</span> 디자인 · 퍼블리싱</div>
+                <span>|</span>
+                <div><span>기여도</span>100%</div>
+              </div>
+              <div class="percent">
+                <span>기술스킬</span>
+                HTML · CSS · JAVASCRIPT
+              </div>
+              <div class="summary">
+                [금호석유화학] 방문예약 시스템 프로젝트는 방문자가 온라인을 통해
+                원하는 날짜와 시간을 선택하여 간편하게 방문을 예약하고, 관리자가
+                이를 효율적으로 관리할 수 있는 서비스입니다.<br />
+                이 시스템은 반응형 웹 디자인으로 구축되어 모바일 환경에서도
+                최적화된 사용자 경험을 제공합니다.
+                <br />또한, 관리자가 예약된 출입 인원을 한눈에 파악할 수 있는
+                직관적인 대시보드를 구현하여 보다 효율적인 출입 관리가
+                가능하도록 하였습니다.
+              </div>
+            </div>
+          </div>
+          <div class="photoback">
+              <img src="/image/test1.png" />
+              <div class="site_btn">
+                <a href="https://visit.kkpc.com/KKPC_Visitor/visitor/main.aspx" target="_blank">
+                    <span>사이트 보러가기</span>
+                    <div><img src="/image/site.png"></div>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="Hyundai">
+        <div class="modal_container">
+          <div class="modal_top">
+            <div class="modal_title">현대자동차 출입증발급시스템</div>
+            <div class="modal_content">
+              <div class="percent">
+                <div><span>담당업무</span> 디자인 · 퍼블리싱</div>
+                <span>|</span>
+                <div><span>기여도</span> 80% · 100%</div>
+              </div>
+              <div class="percent">
+                <span>기술스킬</span>
+                HTML · CSS · JAVASCRIPT
+              </div>
+              <div class="summary">
+                현대자동차 출입증 발급 시스템은 출입 보안을 강화하기 위해 설계된 솔루션으로, 
+                키오스크를 통해 신분증 및 여권 인식과 휴대전화 인증을 통해 본인 확인 절차를 진행하고,<br> 그룹사 유형에 맞는 출입 절차와 출입증 반납 자동화를 제공합니다. <br>
+                직관적이고 간편한 UI/UX를 통해 사용자가 쉽게 이용할 수 있도록 설계 및 구현되었으며, 
+                다국어 지원(영어·중국어) 기능을 갖추어 외국인 사용자들도 편리하게 접근할 수 있습니다. <br>
+                사용자 경험을 최적화한 시각적 요소와 인터페이스 흐름을 통해 보다 효율적인 출입 절차를 제공합니다.
+              </div>
+            </div>
+          </div>
+          <div class="photo">
+            <div class="kiosk_video">
+              <img src="/image/hyundai_back.png" />
+              <div class="kiosk_mokup">
+                <div class="kiosk">
+                <video src="/image/hyundai_video.mp4" loop muted></video>
+              </div>
+              <span>
+                *저작권으로 인하여 영상이 짧습니다.
+              </span>
+              </div>
+            </div>
+            <div class="kiosk_photo">
+              <div class="kiosk">
+                <img src="/image/hyundai_kiosk1.png">
+              </div>
+              <div class="kiosk">
+                <img src="/image/hyundai_kiosk2.png">
+              </div>
+              <div class="kiosk">
+                <img src="/image/hyundai_kiosk3.png">
+              </div>
+            </div>
+            <div class="kiosk_photo" style="background-color: #bbb;">
+              <div class="kiosk">
+                <img src="/image/hyundai_kiosk4.png">
+              </div>
+              <div class="kiosk">
+                <img src="/image/hyundai_kiosk5.png">
+              </div>
+              <div class="kiosk">
+                <img src="/image/hyundai_kiosk6.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="Hyundaisteel">
+        <div class="modal_container">
+          <div class="modal_top">
+            <div class="modal_title">현대제철 방문증발급시스템</div>
+            <div class="modal_content">
+              <div class="percent">
+                <div><span>담당업무</span> 디자인 · 퍼블리싱</div>
+                <span>|</span>
+                <div><span>기여도</span> 80% · 100%</div>
+              </div>
+              <div class="percent">
+                <span>기술스킬</span>
+                HTML · CSS · JAVASCRIPT
+              </div>
+              <div class="summary">
+                현대자동차 출입증 발급 시스템은 출입 보안을 강화하기 위해 설계된 솔루션으로, 
+                키오스크를 통해 신분증 및 여권 인식과 휴대전화 인증을 통해 본인 확인 절차를 진행하고,<br> 그룹사 유형에 맞는 출입 절차와 출입증 반납 자동화를 제공합니다. <br>
+                직관적이고 간편한 UI/UX를 통해 사용자가 쉽게 이용할 수 있도록 설계 및 구현되었으며, 
+                다국어 지원(영어·중국어) 기능을 갖추어 외국인 사용자들도 편리하게 접근할 수 있습니다. <br>
+                사용자 경험을 최적화한 시각적 요소와 인터페이스 흐름을 통해 보다 효율적인 출입 절차를 제공합니다.
+              </div>
+            </div>
+          </div>
+          <div class="photo">
+            <div class="kiosk_video">
+              <img src="/image/hyundaisteel_back.png" />
+              <div class="kiosk_mokup">
+                <div class="kiosk">
+                <video src="/image/hyundaisteel_video.mp4" loop muted></video>
+              </div>
+              <span>
+                *저작권으로 인하여 영상이 짧습니다.
+              </span>
+              </div>
+            </div>
+            <div class="kiosk_photo">
+              <div class="kiosk">
+                <img src="/image/hyundaisteel_kiosk1.png">
+              </div>
+              <div class="kiosk">
+                <img src="/image/hyundaisteel_kiosk2.png">
+              </div>
+              <div class="kiosk">
+                <img src="/image/hyundaisteel_kiosk3.png">
+              </div>
+            </div>
+            <div class="kiosk_photo" style="background-color: #bbb;">
+              <div class="kiosk">
+                <img src="/image/hyundaisteel_kiosk4.png">
+              </div>
+              <div class="kiosk">
+                <img src="/image/hyundaisteel_kiosk5.png">
+              </div>
+              <div class="kiosk">
+                <img src="/image/hyundaisteel_kiosk6.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal site" id="GangWha">
+        <div class="modal_container ">
+          <div class="modal_top">
+            <div class="modal_title">강화군청 임시출입증</div>
+            <div class="modal_content">
+              <div class="percent">
+                <div><span>담당업무</span> 디자인 · 퍼블리싱</div>
+                <span>|</span>
+                <div><span>기여도</span>100%</div>
+              </div>
+              <div class="percent">
+                <span>기술스킬</span>
+                HTML · CSS · JAVASCRIPT
+              </div>
+              <div class="summary">
+                [금호석유화학] 방문예약 시스템 프로젝트는 방문자가 온라인을 통해
+                원하는 날짜와 시간을 선택하여 간편하게 방문을 예약하고, 관리자가
+                이를 효율적으로 관리할 수 있는 서비스입니다.<br />
+                이 시스템은 반응형 웹 디자인으로 구축되어 모바일 환경에서도
+                최적화된 사용자 경험을 제공합니다.
+                <br />또한, 관리자가 예약된 출입 인원을 한눈에 파악할 수 있는
+                직관적인 대시보드를 구현하여 보다 효율적인 출입 관리가
+                가능하도록 하였습니다.
+              </div>
+            </div>
+          </div>
+          <div class="photoback">
+              <img src="/image/test1.png" />
+              <div class="site_btn">
+                <a href="https://mintong.kr/Visit_new/visit.aspx" target="_blank">
+                    <span>사이트 보러가기</span>
+                    <div><img src="/image/site.png"></div>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal site" id="Mize">
+        <div class="modal_container">
+          <div class="modal_top">
+            <div class="modal_title">마이즈 방문예약시스템</div>
+            <div class="modal_content">
+              <div class="percent">
+                <div><span>담당업무</span> 디자인 · 퍼블리싱</div>
+                <span>|</span>
+                <div><span>기여도</span>100%</div>
+              </div>
+              <div class="percent">
+                <span>기술스킬</span>
+                HTML · CSS · JAVASCRIPT
+              </div>
+              <div class="summary">
+                [금호석유화학] 방문예약 시스템 프로젝트는 방문자가 온라인을 통해
+                원하는 날짜와 시간을 선택하여 간편하게 방문을 예약하고, 관리자가
+                이를 효율적으로 관리할 수 있는 서비스입니다.<br />
+                이 시스템은 반응형 웹 디자인으로 구축되어 모바일 환경에서도
+                최적화된 사용자 경험을 제공합니다.
+                <br />또한, 관리자가 예약된 출입 인원을 한눈에 파악할 수 있는
+                직관적인 대시보드를 구현하여 보다 효율적인 출입 관리가
+                가능하도록 하였습니다.
+              </div>
+            </div>
+          </div>
+          <div class="photoback">
+              <img src="/image/test1.png" />
+              <div class="site_btn">
+                <a href="https://mizecloud-visit.co.kr/Visit_user/application/main.aspx" target="_blank">
+                    <span>사이트 보러가기</span>
+                    <div><img src="/image/site.png"></div>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="Gwedu">
+        <div class="modal_container">
+          <div class="modal_top">
+            <div class="modal_title">강원특별자치도교육청교육과학정보원 방문예약시스템</div>
+            <div class="modal_content">
+              <div class="percent">
+                <div><span>담당업무</span> 디자인 · 퍼블리싱</div>
+                <span>|</span>
+                <div><span>기여도</span> 80% · 100%</div>
+              </div>
+              <div class="percent">
+                <span>기술스킬</span>
+                HTML · CSS · JAVASCRIPT
+              </div>
+              <div class="summary">
+                현대자동차 출입증 발급 시스템은 출입 보안을 강화하기 위해 설계된 솔루션으로, 
+                키오스크를 통해 신분증 및 여권 인식과 휴대전화 인증을 통해 본인 확인 절차를 진행하고,<br> 그룹사 유형에 맞는 출입 절차와 출입증 반납 자동화를 제공합니다. <br>
+                직관적이고 간편한 UI/UX를 통해 사용자가 쉽게 이용할 수 있도록 설계 및 구현되었으며, 
+                다국어 지원(영어·중국어) 기능을 갖추어 외국인 사용자들도 편리하게 접근할 수 있습니다. <br>
+                사용자 경험을 최적화한 시각적 요소와 인터페이스 흐름을 통해 보다 효율적인 출입 절차를 제공합니다.
+              </div>
+            </div>
+          </div>
+          <div class="photo">
+            <div class="kiosk_video">
+              <img src="/image/hyundaisteel_back.png" />
+              <div class="kiosk_mokup">
+                <div class="kiosk">
+                <video src="/image/gwedu_video.mp4" loop muted></video>
+              </div>
+              <span>
+                *저작권으로 인하여 영상이 짧습니다.
+              </span>
+              </div>
+            </div>
+            <div class="kiosk_photo">
+              <div class="kiosk">
+                <img src="/image/gwedu_kiosk1.png">
+              </div>
+              <div class="kiosk">
+                <img src="/image/gwedu_kiosk2.png">
+              </div>
+              <div class="kiosk">
+                <img src="/image/gwedu_kiosk3.png">
+              </div>
+            </div>
+            <div class="kiosk_photo" style="background-color: #bbb;">
+              <div class="kiosk">
+                <img src="/image/gwedu_kiosk4.png">
+              </div>
+              <div class="kiosk">
+                <img src="/image/gwedu_kiosk5.png">
+              </div>
+              <div class="kiosk">
+                <img src="/image/gwedu_kiosk6.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact section" id="contact">
+      <div class="wrap">
+        <h1>CONTACT</h1>
+        <div class="contact_main">
+         <p>"실력이란 쌓아가는 것이라 믿으며, 오늘도 레벨업 중입니다.<br> 배움의 길을 멈추지 않고, 더 나은 내일을 위해 끊임없이 나아가겠습니다."</p>
+          <div class="method">
+            <a href="mailto:dpwls4052@naver.com"><img src="/image/mail.png"><span>dpwls4052@naver.com</span></a>
+            <a href="tel:010-2387-2017"><img src="/image/call.png"><span>010-2387-2017</span></a>
+          </div>
+        </div>
+        <div class="copyright">Copyright © BaeYejin Portfolio 2024. All Rights Reserved.</div>
+      </div>
+    </div>
+    <div class="top_btn">
+      <button class="moveTopBtn" onclick="topBtn()">
+        <img src="image/top_arrow.png" />
+      </button>
+    </div>
+  </body>
+  <script>
+    const modals = document.querySelectorAll(".modal");
+    const kkpc = document.getElementById("Kkpc");
+    const hyundai = document.getElementById("Hyundai");
+    const hyundaisteel = document.getElementById("Hyundaisteel");
+    const gangWha = document.getElementById("GangWha");
+    const mize = document.getElementById("Mize");
+    const gwedu = document.getElementById("Gwedu");
+
+    function kkpcModal() {
+      kkpc.style.display = "flex";
+      document.body.style.overflow = "hidden"; // 스크롤 방지
+    }
+    function hyundaiModal() {
+      hyundai.style.display = "flex";
+      document.body.style.overflow = "hidden"; // 스크롤 방지
+      const video = hyundai.querySelector("video");
+        if (video) {
+          video.currentTime = 0; // 비디오 시작 위치 초기화
+          video.play(); // 비디오 재생
+        }
+    }
+    function hyundaisteelModal() {
+      hyundaisteel.style.display = "flex";
+      document.body.style.overflow = "hidden"; // 스크롤 방지
+      const video = hyundaisteel.querySelector("video");
+        if (video){
+          video.currentTime = 0;
+          video.play();
+        }
+    }
+    function gangWhaModal() {
+      gangWha.style.display = "flex";
+      document.body.style.overflow = "hidden"; // 스크롤 방지
+    }
+    function mizeModal() {
+      mize.style.display = "flex";
+      document.body.style.overflow = "hidden"; // 스크롤 방지
+    }
+    function gweduModal() {
+      gwedu.style.display = "flex";
+      document.body.style.overflow = "hidden"; // 스크롤 방지
+      const video = gwedu.querySelector("video");
+        if (video) {
+          video.currentTime = 0; // 비디오 시작 위치 초기화
+          video.play(); // 비디오 재생
+        }
+    }
+    function closeModal(modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = ""; // 배경 스크롤 복원
+      const video = modal.querySelector("video");
+        if (video) {
+          video.pause(); // 비디오 일시 정지
+          video.currentTime = 0; // 비디오 시작 위치 초기화
+        }
+    }
+
+    // 모달 외부 클릭 및 Esc 키 이벤트
+    modals.forEach((modal) => {
+      // 모달 외부 클릭 시 모달 닫기
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          // 모달 전체를 감지하되 컨테이너 외부 클릭만 닫기
+          closeModal(modal);
+        }
+      });
+
+      // Esc 키 눌렀을 때 모달 닫기
+      window.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && modal.style.display === "flex") {
+          closeModal(modal);
+        }
+      });
+    });
+
+    // 버튼 클릭 시 맨 위로 이동
+    function topBtn() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    document.addEventListener("scroll", () => {
+      const mainSection = document.querySelector(".main");
+      const sectionTop = mainSection.getBoundingClientRect().top;
+      const sectionBottom = mainSection.getBoundingClientRect().bottom;
+      const windowHeight = window.innerHeight;
+      const topbtn = document.querySelector(".top_btn");
+
+      if (sectionTop <= windowHeight * 0.8 && sectionBottom >= 0) {
+        // .main 영역 안에 있을 때
+        topbtn.style.display = "none";
+      } else {
+        // .main 영역을 벗어나면
+        topbtn.style.display = "block";
+      }
+    });
+
+    document.addEventListener("scroll", () => {
+      const aboutSection = document.querySelector(".about");
+      const sectionTop = aboutSection.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      const topbtn = document.querySelector(".top_btn");
+
+      if (sectionTop <= windowHeight * 0.8) {
+        aboutSection.classList.add("about_view");
+        topbtn.style.display = "block";
+      }
+    });
+
+    document.addEventListener("scroll", () => {
+      const contactSection = document.querySelector(".contact");
+      const sectionTop = contactSection.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (sectionTop <= windowHeight * 0.8) {
+        contactSection.classList.add("contact_view");
+      }
+    });
+  </script>
+</html>
