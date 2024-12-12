@@ -82,8 +82,55 @@
     </div>
     <div class="portfolio section" id="portfolio">
       <div class="wrap">
+        <div class="pf_h">
+          <div></div>
         <h1>PORTFOLIO</h1>
-        <div class="container portfolio_box">
+        <div class="menu">
+          <a href="###" onclick="hamburger()">
+            <img src="./image/hamburger.png" class="hd_img" style="display: none;">
+            <img src="./image/hamburger_color.png" class="ha_img">
+          </a>
+          <a href="###" onclick="bento()">
+            <img src="./image/bento.png" class="bd_img">
+            <img src="./image/bento_color.png" class="ba_img" style="display: none;">
+          </a>
+        </div>
+      </div>
+      <div id="Hamburgerwrap" class="hamburgerwrap">
+        <div class="kkpc">
+          <div class="h_left">
+            <div class="h_title">금호석유화학 방문예약시스템</div>
+            <div class="h_content">
+              <div class="percent">
+                <div><span>담당업무</span> 디자인 · 퍼블리싱</div>
+                <span>|</span>
+                <div><span>기여도</span>100%</div>
+              </div>
+              <div class="percent">
+                <div><span>기술스킬</span>
+                HTML · CSS · JAVASCRIPT</div>
+              </div>
+              <div class="summary">[금호석유화학] 방문예약 시스템 프로젝트는 방문자가 온라인을 통해 원하는 날짜와 시간을 선택하여 간편하게 방문을 예약하고, 
+                관리자가 이를 효율적으로 관리할 수 있는 서비스입니다.
+                이 시스템은 반응형 웹 디자인으로 구축되어 모바일 환경에서도 최적화된 사용자 경험을 제공합니다.
+                또한, 관리자가 예약된 출입 인원을 한눈에 파악할 수 있는 직관적인 대시보드를 구현하여 보다 효율적인 출입 관리가 가능하도록 하였습니다.
+              </div>
+            </div>
+            <div class="site_btn">
+              <a href="https://visit.kkpc.com/KKPC_Visitor/visitor/main.aspx" target="_blank">
+                  <span>사이트 보러가기</span>
+                  <div><img src="./image/site.png"></div>
+              </a>
+            </div>
+          </div>
+          <div class="h_right">
+            <div>
+              <img src="./image/test1.png" />
+          </div>
+          </div>
+        </div>
+      </div>
+        <div id="Bentowrap" class="portfolio_box" style="display: none;">
             <div onclick="kkpcModal()">
                 <div class="portfolio_imgbox">
                   <a href="###">
@@ -128,7 +175,7 @@
               <img src="./image/gangwha.png" class="logo_img" />
             </div>
             <div class="portfolio_description">
-              <p>강화도 민통선</p>
+              <p>강화군청 민통선</p>
               <p><span>#</span>PC <span>#</span>Mobile <span>#</span>반응형</p>
             </div>
           </div>
@@ -156,7 +203,7 @@
               <p><span>#</span>PC <span>#</span>KIOSK</p>
             </div>
           </div>
-          <div>
+          <div onclick="dashboardModal()">
             <div class="portfolio_imgbox">
               <a href="###">
                 <img src="./image/add1.png" />
@@ -164,35 +211,8 @@
               <img src="./image/airpart.png" class="logo_img" />
             </div>
             <div class="portfolio_description">
-              <p>대웅제약</p>
+              <p>현황판 (CJ, 현대제철, 해병2사단 등)</p>
               <p><span>#</span>PC</p>
-            </div>
-          </div>
-          <div>
-            <div class="portfolio_imgbox">
-              <a href="###">
-                <img src="./image/add1.png" />
-              </a>
-              <img src="./image/hyundai_logo1.png" class="logo_img" />
-            </div>
-            <div class="portfolio_description">
-              <p>CJ</p>
-              <p>
-                <span>#</span>PC <span>#</span>KIOSK <span>#</span>Mobile
-                <span>#</span>반응형
-              </p>
-            </div>
-          </div>
-          <div>
-            <div class="portfolio_imgbox">
-              <a href="###">
-                <img src="./image/add1.png" />
-              </a>
-              <img src="./image/hyundai_logo1.png" class="logo_img" />
-            </div>
-            <div class="portfolio_description">
-              <p>국군방첩사령부</p>
-              <p><span>#</span>APP</p>
             </div>
           </div>
         </div>
@@ -208,18 +228,13 @@
                 <div><span>기여도</span>100%</div>
               </div>
               <div class="percent">
-                <span>기술스킬</span>
-                HTML · CSS · JAVASCRIPT
+                <div><span>기술스킬</span>
+                HTML · CSS · JAVASCRIPT</div>
               </div>
-              <div class="summary">
-                [금호석유화학] 방문예약 시스템 프로젝트는 방문자가 온라인을 통해
-                원하는 날짜와 시간을 선택하여 간편하게 방문을 예약하고, 관리자가
-                이를 효율적으로 관리할 수 있는 서비스입니다.<br />
-                이 시스템은 반응형 웹 디자인으로 구축되어 모바일 환경에서도
-                최적화된 사용자 경험을 제공합니다.
-                <br />또한, 관리자가 예약된 출입 인원을 한눈에 파악할 수 있는
-                직관적인 대시보드를 구현하여 보다 효율적인 출입 관리가
-                가능하도록 하였습니다.
+              <div class="summary">[금호석유화학] 방문예약 시스템 프로젝트는 방문자가 온라인을 통해 원하는 날짜와 시간을 선택하여 간편하게 방문을 예약하고, 
+                관리자가 이를 효율적으로 관리할 수 있는 서비스입니다.
+                이 시스템은 반응형 웹 디자인으로 구축되어 모바일 환경에서도 최적화된 사용자 경험을 제공합니다.
+                또한, 관리자가 예약된 출입 인원을 한눈에 파악할 수 있는 직관적인 대시보드를 구현하여 보다 효율적인 출입 관리가 가능하도록 하였습니다.
               </div>
             </div>
           </div>
@@ -242,18 +257,17 @@
               <div class="percent">
                 <div><span>담당업무</span> 디자인 · 퍼블리싱</div>
                 <span>|</span>
-                <div><span>기여도</span> 80% · 100%</div>
+                <div><span>기여도</span> 90% · 100%</div>
               </div>
               <div class="percent">
-                <span>기술스킬</span>
-                HTML · CSS · JAVASCRIPT
+                <div><span>기술스킬</span>
+                  HTML · CSS · JAVASCRIPT</div>
               </div>
-              <div class="summary">
-                현대자동차 출입증 발급 시스템은 출입 보안을 강화하기 위해 설계된 솔루션으로, 
-                키오스크를 통해 신분증 및 여권 인식과 휴대전화 인증을 통해 본인 확인 절차를 진행하고,<br> 그룹사 유형에 맞는 출입 절차와 출입증 반납 자동화를 제공합니다. <br>
-                직관적이고 간편한 UI/UX를 통해 사용자가 쉽게 이용할 수 있도록 설계 및 구현되었으며, 
-                다국어 지원(영어·중국어) 기능을 갖추어 외국인 사용자들도 편리하게 접근할 수 있습니다. <br>
-                사용자 경험을 최적화한 시각적 요소와 인터페이스 흐름을 통해 보다 효율적인 출입 절차를 제공합니다.
+              <div class="summary">[현대자동차] 출입증 발급 시스템은 출입 보안을 강화하기 위해 설계된 솔루션으로, 
+                키오스크를 통해 신분증 및 여권 인식과 휴대전화 인증을 통해 본인 확인을 진행하며, 
+                그룹사별 맞춤 출입 절차와 출입증 반납 자동화 기능을 제공합니다. 
+                직관적이고 간편한 UI/UX를 통해 사용자 편의성을 높였으며, 다국어 지원(영어·중국어)을 통해 외국인 사용자도 쉽게 이용할 수 있도록 설계되었습니다. 
+                효율적인 출입 절차를 위해 시각적 요소와 인터페이스 흐름이 최적화된 시스템입니다.
               </div>
             </div>
           </div>
@@ -305,15 +319,13 @@
                 <div><span>기여도</span> 80% · 100%</div>
               </div>
               <div class="percent">
-                <span>기술스킬</span>
-                HTML · CSS · JAVASCRIPT
+                <div><span>기술스킬</span>
+                  HTML · CSS · JAVASCRIPT</div>
               </div>
-              <div class="summary">
-                현대자동차 출입증 발급 시스템은 출입 보안을 강화하기 위해 설계된 솔루션으로, 
-                키오스크를 통해 신분증 및 여권 인식과 휴대전화 인증을 통해 본인 확인 절차를 진행하고,<br> 그룹사 유형에 맞는 출입 절차와 출입증 반납 자동화를 제공합니다. <br>
-                직관적이고 간편한 UI/UX를 통해 사용자가 쉽게 이용할 수 있도록 설계 및 구현되었으며, 
-                다국어 지원(영어·중국어) 기능을 갖추어 외국인 사용자들도 편리하게 접근할 수 있습니다. <br>
-                사용자 경험을 최적화한 시각적 요소와 인터페이스 흐름을 통해 보다 효율적인 출입 절차를 제공합니다.
+              <div class="summary">[현대제철] 방문증 발급 시스템은 휴대전화 번호로 예약 정보를 확인한 후, 
+                키오스크에서 안전교육 문제를 풀고 통과 시 얼굴 촬영과 안면인식을 통해 신분증을 스캔, 보관한 후 방문증 카드를 발급하는 시스템입니다.
+                사용자를 위한 직관적이고 편리한 UI/UX를 설계하여 안전교육 진행과 방문증 발급 절차를 효율적으로 구현했으며, 
+                다국어 지원을 통해 다양한 사용자들이 쉽게 접근할 수 있도록 설계되었습니다.
               </div>
             </div>
           </div>
@@ -365,18 +377,13 @@
                 <div><span>기여도</span>100%</div>
               </div>
               <div class="percent">
-                <span>기술스킬</span>
-                HTML · CSS · JAVASCRIPT
+                <div><span>기술스킬</span>
+                HTML · CSS · JAVASCRIPT</div>
               </div>
-              <div class="summary">
-                [금호석유화학] 방문예약 시스템 프로젝트는 방문자가 온라인을 통해
-                원하는 날짜와 시간을 선택하여 간편하게 방문을 예약하고, 관리자가
-                이를 효율적으로 관리할 수 있는 서비스입니다.<br />
-                이 시스템은 반응형 웹 디자인으로 구축되어 모바일 환경에서도
-                최적화된 사용자 경험을 제공합니다.
-                <br />또한, 관리자가 예약된 출입 인원을 한눈에 파악할 수 있는
-                직관적인 대시보드를 구현하여 보다 효율적인 출입 관리가
-                가능하도록 하였습니다.
+              <div class="summary">[강화군청] 민통선 임시출입증 발급 시스템은 방문객이 민통선을 통과하기 위해 필요한 임시출입증을 모바일로 간편하게 발급받을 수 있는 서비스입니다. 
+                기존의 수기 작성 방식에서 QR코드와 차량번호 인식을 활용한 디지털 시스템으로 전환해 발급 시간을 크게 단축하고 절차를 간소화했습니다.
+                모든 디바이스에서 문제없이 작동하도록 반응형 웹 디자인을 적용했으며, 
+                사용자 친화적인 화면 구성과 효율적인 인터페이스를 통해 쉽고 빠르게 이용할 수 있도록 구현했습니다.
               </div>
             </div>
           </div>
@@ -397,23 +404,17 @@
             <div class="modal_title">마이즈 방문예약시스템</div>
             <div class="modal_content">
               <div class="percent">
-                <div><span>담당업무</span> 디자인 · 퍼블리싱</div>
+                <div><span>담당업무</span>퍼블리싱</div>
                 <span>|</span>
                 <div><span>기여도</span>100%</div>
               </div>
               <div class="percent">
-                <span>기술스킬</span>
-                HTML · CSS · JAVASCRIPT
+                <div><span>기술스킬</span>
+                  HTML · CSS · JAVASCRIPT</div>
               </div>
-              <div class="summary">
-                [금호석유화학] 방문예약 시스템 프로젝트는 방문자가 온라인을 통해
-                원하는 날짜와 시간을 선택하여 간편하게 방문을 예약하고, 관리자가
-                이를 효율적으로 관리할 수 있는 서비스입니다.<br />
-                이 시스템은 반응형 웹 디자인으로 구축되어 모바일 환경에서도
-                최적화된 사용자 경험을 제공합니다.
-                <br />또한, 관리자가 예약된 출입 인원을 한눈에 파악할 수 있는
-                직관적인 대시보드를 구현하여 보다 효율적인 출입 관리가
-                가능하도록 하였습니다.
+              <div class="summary">[마이즈] 방문예약 시스템 프로젝트는 방문자가 온라인을 통해 원하는 날짜와 시간을 선택하여 간편하게 방문을 예약하고, 
+                관리자가 이를 효율적으로 관리할 수 있는 서비스입니다.
+                이 시스템은 반응형 웹 디자인으로 구축되어 모바일 환경에서도 최적화된 사용자 경험을 제공합니다.
               </div>
             </div>
           </div>
@@ -434,20 +435,18 @@
             <div class="modal_title">강원특별자치도교육청교육과학정보원 방문예약시스템</div>
             <div class="modal_content">
               <div class="percent">
-                <div><span>담당업무</span> 디자인 · 퍼블리싱</div>
+                <div><span>담당업무</span>퍼블리싱</div>
                 <span>|</span>
-                <div><span>기여도</span> 80% · 100%</div>
+                <div><span>기여도</span>100%</div>
               </div>
               <div class="percent">
-                <span>기술스킬</span>
-                HTML · CSS · JAVASCRIPT
+                <div><span>기술스킬</span>
+                  HTML · CSS · JAVASCRIPT</div>
               </div>
-              <div class="summary">
-                현대자동차 출입증 발급 시스템은 출입 보안을 강화하기 위해 설계된 솔루션으로, 
-                키오스크를 통해 신분증 및 여권 인식과 휴대전화 인증을 통해 본인 확인 절차를 진행하고,<br> 그룹사 유형에 맞는 출입 절차와 출입증 반납 자동화를 제공합니다. <br>
-                직관적이고 간편한 UI/UX를 통해 사용자가 쉽게 이용할 수 있도록 설계 및 구현되었으며, 
-                다국어 지원(영어·중국어) 기능을 갖추어 외국인 사용자들도 편리하게 접근할 수 있습니다. <br>
-                사용자 경험을 최적화한 시각적 요소와 인터페이스 흐름을 통해 보다 효율적인 출입 절차를 제공합니다.
+              <div class="summary">[강원특별자치도교육청교육과학정보원] 방문예약 시스템은 키오스크를 활용해 방문자가 출입 목적, 담당자, 기간 등의 정보를 직접 입력하고, 
+                보안서약서에 서명하여 출입 신청을 완료하는 서비스입니다. 이후 안내데스크에서 출입 절차를 진행할 수 있도록 설계되었습니다.
+                퍼블리싱 전반을 담당하며 키오스크 환경을 고려해 사용자 경험을 최적화했습니다. 
+                특히, 가상 키보드 사용 시 화면이 자연스럽게 이동하도록 구현하여 다양한 사용자 환경에서도 불편함 없이 이용할 수 있도록 작업했습니다.
               </div>
             </div>
           </div>
@@ -488,6 +487,53 @@
           </div>
         </div>
       </div>
+      <div class="modal" id="Dashboard">
+        <div class="modal_container">
+          <div class="modal_top">
+            <div class="modal_title">현황판</div>
+            <div class="modal_content">
+              <div class="percent">
+                <div><span>담당업무</span>디자인 · 퍼블리싱</div>
+                <span>|</span>
+                <div><span>기여도</span>100%</div>
+              </div>
+              <div class="percent">
+                <div><span>기술스킬</span>
+                  HTML · CSS · JAVASCRIPT</div>
+              </div>
+              <div class="summary">다양한 기업 및 기관(CJ, 현대제철, 해병2사단, 금호석유화학 등)에 설치된 현황판은 관리자가 실시간으로 데이터를 모니터링할 수 있도록 설계된 화면입니다. 
+                금호석유화학과 현대제철에서는 실시간 출입내역을, 해병2사단에서는 입출차 상황을, CJ에서는 제품창고 현황을 실시간으로 확인할 수 있는 기능을 제공합니다.
+                관리자가 정보를 한눈에 파악할 수 있도록 그래프와 표를 활용해 직관적인 화면 구성을 디자인하고 퍼블리싱을 진행했습니다. 
+                사용성에 중점을 둔 설계를 통해 복잡한 데이터를 간단하고 명확하게 시각화했습니다.
+              </div>
+            </div>
+          </div>
+          <div class="photo">
+            <div class="kiosk_photo">
+              <div class="kiosk">
+                <img src="./image/hyundaisteel_kiosk1.png">
+              </div>
+              <div class="kiosk">
+                <img src="./image/hyundaisteel_kiosk2.png">
+              </div>
+              <div class="kiosk">
+                <img src="./image/hyundaisteel_kiosk3.png">
+              </div>
+            </div>
+            <div class="kiosk_photo" style="background-color: #bbb;">
+              <div class="kiosk">
+                <img src="./image/hyundaisteel_kiosk4.png">
+              </div>
+              <div class="kiosk">
+                <img src="./image/hyundaisteel_kiosk5.png">
+              </div>
+              <div class="kiosk">
+                <img src="./image/hyundaisteel_kiosk6.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="contact section" id="contact">
       <div class="wrap">
@@ -501,6 +547,8 @@
         </div>
         <div class="copyright">Copyright © BaeYejin Portfolio 2024. All Rights Reserved.</div>
       </div>
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
     </div>
     <div class="top_btn">
       <button class="moveTopBtn" onclick="topBtn()">
@@ -509,6 +557,8 @@
     </div>
   </body>
   <script>
+    const hamburgediv = document.getElementById("Hamburgerwrap");
+    const bentodiv = document.getElementById("Bentowrap");
     const modals = document.querySelectorAll(".modal");
     const kkpc = document.getElementById("Kkpc");
     const hyundai = document.getElementById("Hyundai");
@@ -516,6 +566,26 @@
     const gangWha = document.getElementById("GangWha");
     const mize = document.getElementById("Mize");
     const gwedu = document.getElementById("Gwedu");
+    const dashboard = document.getElementById("Dashboard");
+
+
+    function hamburger() {
+      hamburgediv.style.display = "flex";
+      bentodiv.style.display = "none";
+      document.querySelector('.ha_img').style.display = "flex";
+      document.querySelector('.hd_img').style.display = "none";
+      document.querySelector('.bd_img').style.display = "flex";
+      document.querySelector('.ba_img').style.display = "none";
+    }
+
+    function bento() {
+      bentodiv.style.display = "grid";
+      hamburgediv.style.display = "none";
+      document.querySelector('.ha_img').style.display = "none";
+      document.querySelector('.hd_img').style.display = "flex";
+      document.querySelector('.bd_img').style.display = "none";
+      document.querySelector('.ba_img').style.display = "flex";
+    }
 
     function kkpcModal() {
       kkpc.style.display = "flex";
@@ -556,7 +626,10 @@
           video.play(); // 비디오 재생
         }
     }
-
+    function dashboardModal() {
+      dashboard.style.display = "flex";
+      document.body.style.overflow = "hidden"; // 스크롤 방지
+    }
     function closeModal(modal) {
       modal.style.display = "none";
       document.body.style.overflow = ""; // 배경 스크롤 복원
@@ -613,6 +686,7 @@
       if (aboutTop <= windowHeight * 0.8) {
         aboutSection.classList.add("about_view");
         aboutA.classList.add("on");
+        topbtn.style.display = "block"; 
       } else {
         aboutA.classList.remove("on");
       }
