@@ -111,7 +111,9 @@ header div ul li a.on{
 .wrap{
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  width: 100%;
+  /* justify-content: space-between; */
+  margin: 0 300px;
 }
 .wrap h1{
   padding: 80px 0;
@@ -157,8 +159,11 @@ header div ul li a.on{
    }
 }
 .about .container{
-  gap: 120px;
+  /* gap: 120px; */
+  width: 100%;
   align-items: flex-end;
+  justify-content: space-evenly;
+  /* margin: 0 auto; */
 }
 .contentbox_left{
    flex-direction: column;
@@ -326,6 +331,7 @@ header div ul li a.on{
 }
 .h_left .site_btn{
    position: unset;
+   transform: unset;
    margin-top: 30px;
    margin-left: 4px;
 }
@@ -388,6 +394,7 @@ header div ul li a.on{
   height: 300px;
   border-radius: 15px;
   will-change: transform;
+  box-shadow: 0px 4px 10px 0px rgba(153, 153, 153, 0.25);
 }
 .portfolio_imgbox a img{
   width: 100%;
@@ -553,9 +560,9 @@ margin-right: 2px;
 }
 .site_btn{
    position: absolute;
-   left: 50%;
-   /* top: 50%; */
-   /* transform: translate(-50%,-50%); */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
    /* background-color: #fff; */
    /* z-index: 25; */
 }
@@ -647,6 +654,9 @@ margin-right: 2px;
 .contact{
    position: relative;
    overflow: hidden;
+}
+.contact .wrap{
+   justify-content: space-between;
 }
 .contact_main{
    flex-direction: column;
@@ -745,3 +755,60 @@ margin-right: 2px;
       transform: translateX(0px);
    }
 }
+
+/* @media (min-width: 1920px){
+   .wrap h1 {
+      padding: 100px 0;
+  }
+} */
+@media (min-width: 768px) and (max-width: 1024px){
+   .no_mobile{
+      display: none !important;
+   }
+   .main, .about, .portfolio, .contact {
+      padding-bottom: 120px;
+  }
+  .wrap {
+   margin: 0 80px;
+}
+   .about .container{
+      /* gap: 50px; */
+   }
+   .imagebox {
+      width: 300px;
+      height: 350px;
+  }
+  .info li {
+   margin-bottom: 20px;
+   }
+   .contentbox_right {
+   gap: 80px;
+   }
+   .skill ul li {
+      width: 70px;
+      height: 70px;
+  }
+  .skill ul li img {
+   width: 40px;
+   }
+   .pf_h{
+      width: auto;
+   }
+   .portfolio {
+      height: 100% !important;
+  }
+   .portfolio_box{
+      display: grid !important;
+      grid-template-columns: repeat(2, minmax(auto, 1fr));
+      gap: 40px;
+   }
+   .portfolio_imgbox a {
+      width: 350px;
+      height: 225px;
+  }
+}
+
+@media (max-width: 767px){
+
+}
+
