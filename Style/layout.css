@@ -14,6 +14,7 @@
 html {
    -webkit-appearance: none;
    scroll-behavior: smooth;
+   font-size: 16px;
 }
 
 ::-webkit-scrollbar {
@@ -129,6 +130,9 @@ header div ul li a.on{
  }
  .main{
    /* padding: 0px !important; */
+ }
+ .efect{
+   position: absolute;
  }
  .short{
    flex-direction: column;
@@ -544,11 +548,11 @@ margin-right: 2px;
    align-content: space-between;
 }
 .site .modal_top{
-   padding: 65px 75px 55px 75px;
+   padding: 65px 70px;
 }
 .photoback{
    width: 100%;
-   height: 50%;
+   height: 55%;
    position: relative;
 }
 .photoback img{
@@ -756,59 +760,278 @@ margin-right: 2px;
    }
 }
 
-/* @media (min-width: 1920px){
-   .wrap h1 {
-      padding: 100px 0;
-  }
-} */
-@media (min-width: 768px) and (max-width: 1024px){
+ @media screen and (min-width: 1024px) and (max-width: 1540px){
+   html{
+      font-size: 15px;
+   }
    .no_mobile{
       display: none !important;
    }
-   .main, .about, .portfolio, .contact {
-      padding-bottom: 120px;
-  }
-  .wrap {
-   margin: 0 80px;
-}
-   .about .container{
-      /* gap: 50px; */
+   .top_btn button{
+      width: 50px;
+      height: 50px;
    }
+   .top_btn button img {
+      width: 30px;
+  }
+   .wrap {
+      margin: 0 80px;
+  }
+  .about .container{
+   max-width: 1100px;
+   
+  }
    .imagebox {
       width: 300px;
       height: 350px;
   }
-  .info li {
-   margin-bottom: 20px;
-   }
-   .contentbox_right {
-   gap: 80px;
-   }
-   .skill ul li {
+   .contentbox_right{
+      gap: 60px;
+     }
+     .skill ul li{
       width: 70px;
-      height: 70px;
-  }
-  .skill ul li img {
-   width: 40px;
-   }
-   .pf_h{
+    height: 70px;
+     }
+     .skill ul li img{
+      width: 45px;
+     }
+     .pf_h{
       width: auto;
    }
    .portfolio {
       height: 100% !important;
+  }
+     .portfolio_box{
+      display: grid !important;
+      grid-template-columns: repeat(2, minmax(auto, 1fr));
+      gap: 40px;
+   }
+   .site .modal_top {
+      padding: 60px 70px;
+  }
+  .modal_top{
+   padding: 60px 70px;
+  }
+   .modal_title{
+      font-size: 1.8rem;
+   }
+   .modal_content{
+      font-size: 1.2rem;
+      margin-top: 30px;
+      gap: 20px;
+   }
+   .percent span{
+      font-size: 1.3rem;
+   }
+   .summary{
+      font-size: 1.2rem;
+      white-space: unset;
+   }
+   .kiosk_mokup{
+      left: 65%;
+   }
+   .kiosk{
+      height: 480px;
+      padding: 25px 15px 0 15px;
+      border-radius: 20px 20px 0 0;
+   }
+   .kiosk_mokup span{
+      font-size: 1rem;
+      margin-left: 30px;
+      margin-bottom: 20px;
+  
+   }
+   .kiosk_photo{
+      padding: 100px 50px;
+      padding-bottom: 0;
+      gap: 20px;
+   }
+} 
+ @media screen and (min-width: 768px) and (max-width: 1023px){
+   html{
+      font-size: 14px;
+   }
+   .no_mobile{
+      display: none !important;
+   }
+   .about, .portfolio{
+      height: 100%;
+   }
+   header > div{
+      padding: 0 60px;
+      font-size: 1.3rem;
+   }
+   .main_btn img {
+      width: 30px;
+  }
+  header div ul{
+   gap: 50px;
+  }
+   .top_btn button{
+      width: 50px;
+      height: 50px;
+   }
+   .top_btn button img {
+      width: 30px;
+  }
+
+   .wrap {
+      margin: 0 80px;
+      width: auto;
+  }
+  .about .container{
+   max-width: 1100px;
+   gap: 60px;
+   
+  }
+   .contentbox_right{
+      gap: 60px;
+     }
+     .skill ul li{
+      width: 70px;
+    height: 70px;
+     }
+     .skill ul li img{
+      width: 45px;
+     }
+     .pf_h{
+      width: auto;
+   }
+   .portfolio {
+      height: 100% !important;
+  }
+     .portfolio_box{
+      display: grid !important;
+      grid-template-columns: repeat(2, minmax(auto, 1fr));
+      gap: 40px;
+   }
+   .portfolio_imgbox a{
+      width: 325px;
+      height: 225px;
+   }
+   .site .modal_top {
+      padding: 50px 55px;
+  }
+  .modal_top{
+   padding: 50px 55px;
+  }
+  .modal_title{
+   font-size: 1.7rem;
+}
+   .modal_content{
+      font-size: 1.15rem;
+      margin-top: 30px;
+      gap: 20px;
+   }
+   .percent span{
+      font-size: 1.25rem;
+   }
+   .summary{
+      font-size: 1.2rem;
+      white-space: unset;
+   }
+   .kiosk_mokup{
+      left: 65%;
+   }
+   .kiosk{
+      height: 360px;
+      padding: 20px 10px 0 10px;
+      border-radius: 16px 16px 0 0;
+   }
+   .kiosk_mokup span{
+      font-size: 1rem;
+      margin-left: 25px;
+      margin-bottom: 15px;
+  
+   }
+   .kiosk_photo{
+      padding: 80px 30px;
+      padding-bottom: 0;
+      gap: 15px;
+   }
+}
+
+@media screen and (max-width: 767px){
+   html{
+      font-size: 13px;
+   }
+   .no_mobile{
+      display: none !important;
+   }
+   .about, .portfolio{
+      height: 100%;
+   }
+   .wrap{
+      margin: 0 300px;
+   }
+   .wrap h1{
+      font-size: 2.5rem;
+      padding: 50px 0;
+   }
+   .top_btn {
+      bottom: 30px;
+      right: 30px;
+  }
+   .top_btn button{
+      width: 40px;
+      height: 40px;
+   }
+   .top_btn button img {
+      width: 20px;
+  }
+   .main_btn{
+      display: none;
+   }
+   header > div{
+      padding: 0 20px;
+      justify-content: center;
+      width: 100%;
+   }
+   header div ul{
+      gap: 30px;
+   }
+   .short{
+      font-size: 3rem;
+      gap: 20px;
+   }
+   .short_bottom{
+      font-size: 1.5rem;
+      justify-content: center;
+      line-height: 25px;
+   }
+   .imagebox {
+      width: 300px;
+      height: 350px;
   }
    .portfolio_box{
       display: grid !important;
       grid-template-columns: repeat(2, minmax(auto, 1fr));
       gap: 40px;
    }
-   .portfolio_imgbox a {
-      width: 350px;
-      height: 225px;
+   .portfolio_imgbox a{
+      width: 220px;
+      height: 160px;
+  
+   }
+   .container{
+      gap: 40px;
+   }
+   .contentbox_left{
+      gap: 35px;
+   }
+   .contentbox_right{
+      min-width: 300px;
+      gap: 40px;
+   }
+   .skill ul{
+      flex-wrap: wrap;
+   }
+   .skill ul li{
+      width: 60px;
+      height: 60px;
+   }
+   .skill ul li img {
+      width: 38px;
   }
-}
-
-@media (max-width: 767px){
-
 }
 
