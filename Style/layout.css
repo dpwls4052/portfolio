@@ -129,10 +129,19 @@ header div ul li a.on{
    margin-left: 5px;
  }
  .main{
-   /* padding: 0px !important; */
+   position: relative;
  }
  .efect{
    position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: -2;
+   width: 1500px;
+ }
+ .efect img{
+   opacity: 0.8;
+   width: 100%;
  }
  .short{
    flex-direction: column;
@@ -345,14 +354,14 @@ header div ul li a.on{
 }
 .h_right > div{
    width: 750px;
-   height: 480px;
+   height: 500px;
    overflow:hidden;
    box-shadow: 0px 4px 10px 0px rgba(153, 153, 153, 0.25);
    border-radius:15px;
 }
 .h_right div img{
    width: 100%;
-   object-fit:contain;
+   object-fit:cover;
 }
 .h_right .kiosk_video{
 
@@ -774,6 +783,9 @@ margin-right: 2px;
    .top_btn button img {
       width: 30px;
   }
+  .efect{
+   width: 100%;
+  }
    .wrap {
       margin: 0 80px;
   }
@@ -874,7 +886,9 @@ margin-right: 2px;
    .top_btn button img {
       width: 30px;
   }
-
+  .efect{
+   width: 100%;
+  }
    .wrap {
       margin: 0 80px;
       width: auto;
@@ -949,6 +963,18 @@ margin-right: 2px;
       padding-bottom: 0;
       gap: 15px;
    }
+   .circle1{
+      width: 800px;
+      height: 800px;
+      bottom: -310px;
+      left: -270px;
+   }
+   .circle2{
+      width: 650px;
+      height: 650px;
+      bottom: -352px;
+      left: 90px;
+   }
 }
 
 @media screen and (max-width: 767px){
@@ -958,11 +984,27 @@ margin-right: 2px;
    .no_mobile{
       display: none !important;
    }
+   .no_mobile_s{
+      display: none !important;
+   }
+   .main{
+      padding: 0px;
+   }
+   .main, .about, .portfolio{
+      padding-bottom: 0px;
+   }
    .about, .portfolio{
       height: 100%;
    }
+   .contact .wrap{
+      justify-content: space-evenly;
+   }
+   .efect{
+      width: 100%;
+      top:45%;
+     }
    .wrap{
-      margin: 0 300px;
+      margin:0 20px;
    }
    .wrap h1{
       font-size: 2.5rem;
@@ -995,24 +1037,15 @@ margin-right: 2px;
       gap: 20px;
    }
    .short_bottom{
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       justify-content: center;
-      line-height: 25px;
+      line-height: 30px;
+       max-width: 400px;
    }
    .imagebox {
       width: 300px;
       height: 350px;
   }
-   .portfolio_box{
-      display: grid !important;
-      grid-template-columns: repeat(2, minmax(auto, 1fr));
-      gap: 40px;
-   }
-   .portfolio_imgbox a{
-      width: 220px;
-      height: 160px;
-  
-   }
    .container{
       gap: 40px;
    }
@@ -1020,7 +1053,7 @@ margin-right: 2px;
       gap: 35px;
    }
    .contentbox_right{
-      min-width: 300px;
+      max-width: 300px;
       gap: 40px;
    }
    .skill ul{
@@ -1033,5 +1066,119 @@ margin-right: 2px;
    .skill ul li img {
       width: 38px;
   }
+  .pf_h {
+   width: auto;
+}
+.portfolio_imgbox{
+   margin-bottom: 12px;
+}
+   .portfolio_box{
+      display: grid !important;
+      grid-template-columns: repeat(2, minmax(auto, 1fr));
+      gap: 20px;
+   }
+   .portfolio_imgbox a{
+      width: 100%;
+      height: 120px;
+  
+   }
+   .portfolio_description p{
+      font-size: 1rem;
+   }
+   .site .modal_container{
+      height: auto;
+   }
+   .site .modal_top {
+      padding: 25px;
+  }
+  .modal_top{
+   padding: 25px;
+  }
+  .modal_title{
+   font-size: 1.5rem;
+}
+   .modal_content{
+      font-size: 1.1rem;
+      margin-top: 20px;
+      gap: 10px;
+   }
+   .percent div {
+      gap: 6px;
+  }
+  .percent {
+   gap: 6px;
+   flex-direction: column;
+}
+   .percent span{
+      font-size:1rem;
+   }
+
+   .summary{
+      font-size: 1.1rem;
+      white-space: unset;
+      line-height: 1.6rem;
+   }
+   .photoback {
+      height: 40%;
+  }
+  .site_btn {
+   top: 45%;
+}
+  .site_btn a{
+   padding: 8px 15px;
+  }
+   .kiosk_mokup{
+      left: 75%;
+   }
+   .kiosk{
+      height: 180px;
+      padding: 9px 8px 0 8px;
+      border-radius: 6px 6px 0 0;
+   }
+   .kiosk_mokup span{
+      font-size:0.7rem;
+      margin-left: 9px;
+      margin-bottom: 9px;
+  
+   }
+   .kiosk_photo{
+      gap: 8px;
+      padding: 40px 10px;
+      padding-bottom: 0;
+   }
+   .contact_main {
+      font-size: 1.2rem;
+      gap: 60px;
+      padding-bottom: 80px;
+  }
+   .contact_main p{
+      line-height: 25px;
+
+   }
+   .method{
+      gap: 14px;
+      flex-direction: column;
+   }
+   .method a:last-of-type span{
+      width: 140px;
+   }
+   .method img{
+      width: 20px;
+   }
+   .copyright{
+      font-size: 0.9rem;
+   }
+   .circle1{
+      width: 600px;
+      height: 600px;
+      bottom: -285px;
+      left: -270px;
+   }
+   .circle2{
+      width: 400px;
+      height: 400px;
+      bottom: -212px;
+      left: 50px;
+   }
 }
 

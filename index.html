@@ -25,10 +25,13 @@
       </div>
     </header>
     <div class="main section" id="main">
-        <div class="efect"></div>
+        <div class="efect">
+          <img src="./image/main2.gif" no-repeat>
+        </div>
         <div class="short">
           <div class="short_top">안녕하세요</div>
-          <div class="short_bottom">소통과 협업으로 더 나아가는 <span class="point_text"> 퍼블리셔</span>, 배예진입니다.</div>
+          <div class="short_bottom">소통과 협업으로 더 나아가는
+            <span class="point_text"> 퍼블리셔, </span>배예진입니다.</div>
         </div>
     </div>
     <div class="about section" id="about">
@@ -447,7 +450,7 @@
             <div class="modal_content">
               <div class="percent">
                 <div><span>담당업무</span> 디자인 · 퍼블리싱</div>
-                <span>|</span>
+                <span class="no_mobile_s">|</span>
                 <div><span>기여도</span>100%</div>
               </div>
               <div class="percent">
@@ -479,7 +482,7 @@
             <div class="modal_content">
               <div class="percent">
                 <div><span>담당업무</span> 디자인 · 퍼블리싱</div>
-                <span>|</span>
+                <span class="no_mobile_s">|</span>
                 <div><span>기여도</span> 90% · 100%</div>
               </div>
               <div class="percent">
@@ -538,7 +541,7 @@
             <div class="modal_content">
               <div class="percent">
                 <div><span>담당업무</span> 디자인 · 퍼블리싱</div>
-                <span>|</span>
+                <span class="no_mobile_s">|</span>
                 <div><span>기여도</span> 80% · 100%</div>
               </div>
               <div class="percent">
@@ -596,7 +599,7 @@
             <div class="modal_content">
               <div class="percent">
                 <div><span>담당업무</span> 디자인 · 퍼블리싱</div>
-                <span>|</span>
+                <span class="no_mobile_s">|</span>
                 <div><span>기여도</span>100%</div>
               </div>
               <div class="percent">
@@ -628,7 +631,7 @@
             <div class="modal_content">
               <div class="percent">
                 <div><span>담당업무</span>퍼블리싱</div>
-                <span>|</span>
+                <span class="no_mobile_s">|</span>
                 <div><span>기여도</span>100%</div>
               </div>
               <div class="percent">
@@ -659,7 +662,7 @@
             <div class="modal_content">
               <div class="percent">
                 <div><span>담당업무</span>퍼블리싱</div>
-                <span>|</span>
+                <span class="no_mobile_s">|</span>
                 <div><span>기여도</span>100%</div>
               </div>
               <div class="percent">
@@ -717,7 +720,7 @@
             <div class="modal_content">
               <div class="percent">
                 <div><span>담당업무</span>디자인 · 퍼블리싱</div>
-                <span>|</span>
+                <span class="no_mobile_s">|</span>
                 <div><span>기여도</span>100%</div>
               </div>
               <div class="percent">
@@ -735,12 +738,8 @@
             <div class>
                 <img src="./image/dashboard_back.png">
               </div>
-              <div class>
-                <img src="./image/dashboard_back2.png"></div>
-                <div class> <img src="./image/dashboard_mize.png"></div>
-                <div class><img src="./image/dashboard_gangwha.png"></div>
-            </div>
-          
+              <div class><img src="./image/dashboard_back2.png"></div>
+                <div class> <img src="./image/dashboard_back3.png"></div> </div>
           </div>
         </div>
       </div>
@@ -824,6 +823,7 @@
       gwedu.style.display = "flex";
       document.body.style.overflow = "hidden"; // 스크롤 방지
       isScrollActive = false; // 스크롤 이벤트 비활성화
+      isScrollActive = false; // 스크롤 이벤트 비활성화
       const video = gwedu.querySelector("video");
         if (video) {
           video.currentTime = 0; // 비디오 시작 위치 초기화
@@ -833,6 +833,7 @@
     function dashboardModal() {
       dashboard.style.display = "flex";
       document.body.style.overflow = "hidden"; // 스크롤 방지
+      isScrollActive = false; // 스크롤 이벤트 비활성화
     }
 
     // 모달 외부 클릭 및 Esc 키 이벤트
