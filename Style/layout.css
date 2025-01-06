@@ -768,11 +768,11 @@ margin-right: 2px;
       transform: translateX(0px);
    }
 }
-@media screen and (min-width: 1920px){
+ @media screen and (min-width: 1920px){
    .wrap h1{
-      padding: 100px 0;
+      padding: 90px 0;
    }
-}
+} 
  @media screen and (min-width: 1024px) and (max-width: 1540px){
    html{
       font-size: 15px;
@@ -980,7 +980,6 @@ margin-right: 2px;
       left: 90px;
    }
 }
-
 @media screen and (max-width: 767px){
    html{
       font-size: 13px;
