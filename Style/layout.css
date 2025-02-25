@@ -557,7 +557,7 @@ header div ul li a.on {
 }
 .site .modal_container {
   margin: 30px 0;
-  height: 100%;
+  /* height: 100%; */
   overflow: hidden;
   align-content: space-between;
 }
@@ -1114,7 +1114,7 @@ header div ul li a.on {
   }
   .percent {
     gap: 6px;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .percent span {
     font-size: 1rem;
@@ -1126,7 +1126,7 @@ header div ul li a.on {
     line-height: 1.6rem;
   }
   .news {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .photoback {
     height: 42%;
