@@ -799,11 +799,11 @@ header div ul li a.on {
     transform: translateX(0px);
   }
 }
-@media screen and (min-width: 1920px) {
+/* @media screen and (min-width: 1920px) {
   .wrap h1 {
     padding: 90px 0;
   }
-}
+} */
 @media screen and (min-width: 1024px) and (max-width: 1540px) {
   html {
     font-size: 15px;
