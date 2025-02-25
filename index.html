@@ -527,6 +527,7 @@
             </div>
           </div>
         </div>
+        <button class="modal_closebtn">✕</button>
       </div>
       <div class="modal" id="Hyundai">
         <div class="modal_container">
@@ -584,6 +585,7 @@
             </div>
           </div>
         </div>
+        <button class="modal_closebtn">✕</button>
       </div>
       <div class="modal" id="Hyundaisteel">
         <div class="modal_container">
@@ -644,6 +646,7 @@
             </div>
           </div>
         </div>
+        <button class="modal_closebtn">✕</button>
       </div>
       <div class="modal site" id="GangWha">
         <div class="modal_container">
@@ -684,6 +687,7 @@
             </div>
           </div>
         </div>
+        <button class="modal_closebtn">✕</button>
       </div>
       <div class="modal site" id="Mize">
         <div class="modal_container">
@@ -718,6 +722,7 @@
             </div>
           </div>
         </div>
+        <button class="modal_closebtn">✕</button>
       </div>
       <div class="modal" id="Gwedu">
         <div class="modal_container">
@@ -776,6 +781,7 @@
             </div>
           </div>
         </div>
+        <button class="modal_closebtn">✕</button>
       </div>
       <div class="modal" id="Dashboard">
         <div class="modal_container">
@@ -804,6 +810,7 @@
             <div><img src="./image/dashboard_back3.png" /></div>
           </div>
         </div>
+        <button class="modal_closebtn">✕</button>
       </div>
     </div>
     <div class="contact section" id="contact">
@@ -881,7 +888,8 @@
       },
       spaceBetween: 30,
       slidesPerView: 1,
-      loop: true,
+      slidesPerGroup: 1,
+      loop: isDesktop() ? true : false,
     });
 
     // Swiper 영역(.mySwiper)에서 마우스 휠 이벤트 처리
@@ -968,7 +976,15 @@
         }
       });
     });
-
+    document.querySelectorAll(".modal_closebtn").forEach((btn) => {
+      btn.addEventListener("click", function (event) {
+        // 클릭한 버튼의 가장 가까운 모달 요소를 찾습니다.
+        const modal = btn.closest(".modal");
+        if (modal) {
+          closeModal(modal);
+        }
+      });
+    });
     // 버튼 클릭 시 맨 위로 이동
     function topBtn() {
       window.scrollTo({ top: 0, behavior: "smooth" });
