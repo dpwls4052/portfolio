@@ -1134,12 +1134,11 @@ header div ul li a.on {
   .modal_closebtn {
     width: 30px;
     height: 30px;
-    font-size: 0.9rem;
     top: 10px;
     margin-left: 10px;
   }
   .site .modal_top {
-    padding: 25px;
+    padding: 22px;
   }
   .modal_top {
     padding: 25px;
@@ -1148,8 +1147,8 @@ header div ul li a.on {
     font-size: 1.5rem;
   }
   .modal_content {
-    font-size: 1.1rem;
-    margin-top: 20px;
+    font-size: 1rem;
+    margin-top: 18px;
     gap: 10px;
   }
   .percent div {
@@ -1164,7 +1163,7 @@ header div ul li a.on {
   }
 
   .summary {
-    font-size: 1.1rem;
+    font-size: 1rem;
     white-space: unset;
     line-height: 1.6rem;
   }
