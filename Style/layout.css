@@ -617,7 +617,7 @@ header div ul li a.on {
 .modal_closebtn {
   width: 45px;
   height: 45px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   border-radius: 50px;
   outline: none;
   border: none;
@@ -865,8 +865,6 @@ header div ul li a.on {
     font-size: 1.2rem;
     margin-top: 30px;
     gap: 20px;
-  }
-  .modal_closebtn {
   }
   .percent span {
     font-size: 1.3rem;
