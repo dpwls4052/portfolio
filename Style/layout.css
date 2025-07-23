@@ -74,6 +74,31 @@ header {
   z-index: 10;
   backdrop-filter: blur(50px);
   box-shadow: 0px 4px 10px 0px rgba(153, 153, 153, 0.25);
+  animation: headerFadeIn 0.5s ease-in-out;
+}
+header.hide {
+  animation: headerSlideUp 0.4s ease-in-out forwards;
+}
+@keyframes headerSlideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes headerFadeIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 header > div {
   height: 80px;
@@ -293,9 +318,12 @@ header div ul li a.on {
 }
 /* portfolio */
 .portfolio {
-  /* height: 100% !important; */
-  /* position: relative; */
+  height: 100vh !important;
 }
+.portfolio .wrap h1 {
+  padding: 0;
+}
+
 .pf_h {
   width: 100%;
   max-width: 1420px;
@@ -318,6 +346,7 @@ header div ul li a.on {
 .hamburgerwrap {
   position: relative;
   max-width: 1500px;
+  padding-top: 50px;
 }
 .hamburger_content {
   justify-content: space-around;
@@ -341,11 +370,11 @@ header div ul li a.on {
   font-size: 1.3rem;
 }
 .h_content .summary {
-  font-size: 1.15rem;
-  line-height: 30px;
+  font-size: 1.4rem;
+  line-height: 34px;
 }
 .news {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .news a {
   text-decoration: underline;
@@ -364,8 +393,8 @@ header div ul li a.on {
   position: relative;
 }
 .h_right > div {
-  width: 750px;
-  height: 500px;
+  width: 800px;
+  height: 550px;
   overflow: hidden;
   box-shadow: 0px 4px 10px 0px rgba(153, 153, 153, 0.25);
   border-radius: 15px;
@@ -593,13 +622,13 @@ header div ul li a.on {
   border-radius: 25px;
   transition: 0.2s;
   will-change: transform;
-  padding: 10px 30px;
+  padding: 10px 40px;
   box-shadow: 0px 4px 10px 1px rgba(153, 153, 153, 0.25);
 }
 .site_btn a span {
   color: var(--pointColor);
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .site_btn div img {
   width: 20px;
@@ -631,6 +660,7 @@ header div ul li a.on {
   opacity: 0.8;
   font-weight: 600;
   color: #665;
+  display: none;
 }
 .modal_closebtn:hover {
   scale: 0.95;
@@ -799,11 +829,13 @@ header div ul li a.on {
     transform: translateX(0px);
   }
 }
-/* @media screen and (min-width: 1920px) {
-  .wrap h1 {
-    padding: 90px 0;
-  }
-} */
+/* bento_mode */
+body.bento_mode .portfolio {
+  height: 100% !important;
+}
+body.bento_mode .portfolio .wrap h1 {
+  padding: 80px 0;
+}
 @media screen and (min-width: 1024px) and (max-width: 1540px) {
   html {
     font-size: 15px;
@@ -823,6 +855,9 @@ header div ul li a.on {
   }
   .wrap {
     margin: 0 80px;
+  }
+  .wrap h1 {
+    padding: 50px 0 !important;
   }
   .about .container {
     max-width: 1100px;
@@ -926,6 +961,9 @@ header div ul li a.on {
   .wrap {
     margin: 0 80px;
     width: auto;
+  }
+  .wrap h1 {
+    padding: 50px 0 !important;
   }
   .about .container {
     max-width: 1100px;
@@ -1043,7 +1081,7 @@ header div ul li a.on {
   }
   .wrap h1 {
     font-size: 2.5rem;
-    padding: 50px 0;
+    padding: 50px 0 !important;
   }
   .top_btn {
     bottom: 30px;
@@ -1136,6 +1174,7 @@ header div ul li a.on {
     height: 30px;
     top: 10px;
     margin-left: 10px;
+    display: block;
   }
   .site .modal_top {
     padding: 22px;

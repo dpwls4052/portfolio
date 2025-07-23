@@ -176,8 +176,7 @@
                     <div><span>기술스킬</span> HTML · CSS · JAVASCRIPT</div>
                   </div>
                   <!-- prettier-ignore -->
-                  <div class="summary">[현대자동차] 출입증 발급 시스템은 출입 보안을 강화하기 위해 설계된 솔루션으로, 
-                    키오스크를 통해 신분증 및 여권 인식과 휴대전화 인증을 통해 본인 확인을 진행하며, 
+                  <div class="summary">[현대자동차] 출입증 발급 시스템은 출입 보안을 강화하기 위해 설계된 솔루션으로, 키오스크를 통해 신분증 및 여권 인식과 휴대전화 인증을 통해 본인 확인을 진행하며, 
                     그룹사별 맞춤 출입 절차와 출입증 반납 자동화 기능을 제공합니다. 
                     직관적이고 간편한 UI/UX를 통해 사용자 편의성을 높였으며, 다국어 지원(영어·중국어)을 통해 외국인 사용자도 쉽게 이용할 수 있도록 설계되었습니다. 
                     효율적인 출입 절차를 위해 시각적 요소와 인터페이스 흐름이 최적화된 시스템입니다.
@@ -262,8 +261,7 @@
                     <div><span>기술스킬</span> HTML · CSS · JAVASCRIPT</div>
                   </div>
                   <!-- prettier-ignore -->
-                  <div class="summary">[현대제철] 방문증 발급 시스템은 휴대전화 번호로 예약 정보를 확인한 후, 
-                    키오스크에서 안전교육 문제를 풀고 통과 시 얼굴 촬영과 안면인식을 통해 신분증을 스캔, 보관한 후 방문증 카드를 발급하는 시스템입니다.
+                  <div class="summary">[현대제철] 방문증 발급 시스템은 휴대전화 번호로 예약 정보를 확인한 후, 키오스크에서 안전교육 문제를 풀고 통과 시 얼굴 촬영과 안면인식을 통해 신분증을 스캔, 보관한 후 방문증 카드를 발급하는 시스템입니다.
                     사용자를 위한 직관적이고 편리한 UI/UX를 설계하여 안전교육 진행과 방문증 발급 절차를 효율적으로 구현했으며, 
                     다국어 지원을 통해 다양한 사용자들이 쉽게 접근할 수 있도록 설계되었습니다.
                   </div>
@@ -341,8 +339,8 @@
                     <div><span>기술스킬</span> HTML · CSS · JAVASCRIPT</div>
                   </div>
                   <!-- prettier-ignore -->
-                  <div class="summary">[강원특별자치도교육청교육과학정보원] 방문예약 시스템은 키오스크를 활용해 방문자가 출입 목적, 담당자, 기간 등의 정보를 직접 입력하고, 
-                    보안서약서에 서명하여 출입 신청을 완료하는 서비스입니다. 이후 안내데스크에서 출입 절차를 진행할 수 있도록 설계되었습니다.
+                  <div class="summary">[강원특별자치도교육청교육과학정보원] 방문예약 시스템은 키오스크를 활용해 방문자가 출입 목적, 담당자, 기간 등의 정보를 직접 입력하고, 보안서약서에 서명하여 출입 신청을 완료하는 서비스입니다. 
+                    이후 안내데스크에서 출입 절차를 진행할 수 있도록 설계되었습니다.
                     퍼블리싱 전반을 담당하며 키오스크 환경을 고려해 사용자 경험을 최적화했습니다. 
                     특히, 가상 키보드 사용 시 화면이 자연스럽게 이동하도록 구현하여 다양한 사용자 환경에서도 불편함 없이 이용할 수 있도록 작업했습니다.
                   </div>
@@ -860,6 +858,7 @@
     const mize = document.getElementById("Mize");
     const gwedu = document.getElementById("Gwedu");
     const dashboard = document.getElementById("Dashboard");
+    const header = document.querySelector("header");
 
     let isScrollActive = true; // 기본적으로 활성
     let currentMenu = "hamburger";
@@ -876,6 +875,10 @@
         isScrollActive = isDesktop();
       } else {
         isScrollActive = false;
+      }
+      // 반응형일 경우 header 다시 보여주기
+      if (!isDesktop()) {
+        document.querySelector("header")?.classList.remove("hide");
       }
     });
 
@@ -1056,6 +1059,8 @@
       document.querySelector(".hd_img").style.display = "none";
       document.querySelector(".bd_img").style.display = "flex";
       document.querySelector(".ba_img").style.display = "none";
+      header.classList.add("hide");
+      document.body.classList.remove("bento_mode");
     }
 
     function bento() {
@@ -1068,6 +1073,8 @@
       document.querySelector(".bd_img").style.display = "none";
       document.querySelector(".ba_img").style.display = "flex";
       document.querySelector(".portfolio").style.height = "100%";
+      header?.classList.remove("hide");
+      document.body.classList.add("bento_mode");
     }
 
     function closeModal(modal) {
@@ -1127,5 +1134,33 @@
         });
       });
     };
+    (function () {
+      const header = document.querySelector("header");
+      const portfolio = document.querySelector("#portfolio");
+
+      if (!header || !portfolio) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          const isHamburger = currentMenu === "hamburger";
+          const isWideScreen = isDesktop();
+
+          // 포트폴리오 영역에 들어왔고 조건이 맞으면
+          if (entry.isIntersecting && isHamburger && isWideScreen) {
+            header.classList.add("hide");
+            document.body.classList.add("hamburger_mode"); // ✅ 포트폴리오에 진입하면 클래스 추가
+          } else {
+            header.classList.remove("hide");
+            document.body.classList.remove("hamburger_mode"); // ✅ 벗어나면 제거
+          }
+        },
+        {
+          root: null,
+          threshold: 0.4,
+        }
+      );
+
+      observer.observe(portfolio);
+    })();
   </script>
 </html>
