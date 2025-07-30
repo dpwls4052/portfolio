@@ -1306,10 +1306,8 @@
           // 포트폴리오 영역에 들어왔고 조건이 맞으면
           if (entry.isIntersecting && isHamburger && isWideScreen) {
             header.classList.add("hide");
-            document.body.classList.add("hamburger_mode"); // ✅ 포트폴리오에 진입하면 클래스 추가
           } else {
             header.classList.remove("hide");
-            document.body.classList.remove("hamburger_mode"); // ✅ 벗어나면 제거
           }
         },
         {
