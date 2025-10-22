@@ -60,7 +60,7 @@
             <ul class="info">
               <li><span>Name : </span><span>배예진</span></li>
               <li><span>Birth : </span><span>2000.12.20</span></li>
-              <li><span>Address : </span><span>인천광역시 연수구</span></li>
+              <!-- <li><span>Address : </span><span>인천광역시 연수구</span></li> -->
               <li><span>Phone : </span><span>010-2387-2017</span></li>
               <li><span>E-Mail : </span><span>dpwls4052@naver.com</span></li>
             </ul>
@@ -994,22 +994,22 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    const hamburgediv = document.getElementById("Hamburgerwrap");
-    const bentodiv = document.getElementById("Bentowrap");
-    const modals = document.querySelectorAll(".modal");
-    const kkpc = document.getElementById("Kkpc");
-    const hyundai = document.getElementById("Hyundai");
-    const hyundaisteel = document.getElementById("Hyundaisteel");
-    const gangWha = document.getElementById("GangWha");
-    const mize = document.getElementById("Mize");
-    const gwedu = document.getElementById("Gwedu");
-    const dashboard = document.getElementById("Dashboard");
-    const header = document.querySelector("header");
-    const cloud = document.getElementById("Cloud");
-    const portfolio = document.getElementById("Portfolio");
+    const hamburgediv = document.getElementById('Hamburgerwrap');
+    const bentodiv = document.getElementById('Bentowrap');
+    const modals = document.querySelectorAll('.modal');
+    const kkpc = document.getElementById('Kkpc');
+    const hyundai = document.getElementById('Hyundai');
+    const hyundaisteel = document.getElementById('Hyundaisteel');
+    const gangWha = document.getElementById('GangWha');
+    const mize = document.getElementById('Mize');
+    const gwedu = document.getElementById('Gwedu');
+    const dashboard = document.getElementById('Dashboard');
+    const header = document.querySelector('header');
+    const cloud = document.getElementById('Cloud');
+    const portfolio = document.getElementById('Portfolio');
 
     let isScrollActive = true; // 기본적으로 활성
-    let currentMenu = "hamburger";
+    let currentMenu = 'hamburger';
 
     // 화면 너비가 1540px 초과일 때만 데스크탑(햄버거 메뉴가 보이는 상태)
     function isDesktop() {
@@ -1017,8 +1017,8 @@
     }
 
     // 창 크기 변경 시 스크롤 활성 여부 업데이트 (1540px 이하이면 비활성)
-    window.addEventListener("resize", function () {
-      if (currentMenu === "hamburger") {
+    window.addEventListener('resize', function () {
+      if (currentMenu === 'hamburger') {
         // 데스크탑이면 활성, 아니면 비활성
         isScrollActive = isDesktop();
       } else {
@@ -1026,19 +1026,19 @@
       }
       // 반응형일 경우 header 다시 보여주기
       if (!isDesktop()) {
-        document.querySelector("header")?.classList.remove("hide");
+        document.querySelector('header')?.classList.remove('hide');
       }
     });
 
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper('.mySwiper', {
       speed: 600,
       pagination: {
-        el: ".swiper-pagination",
+        el: '.swiper-pagination',
       },
       mousewheel: {
         invert: false,
         sensitivity: 1,
-        eventsTarget: ".mySwiper",
+        eventsTarget: '.mySwiper',
       },
       spaceBetween: 30,
       slidesPerView: 1,
@@ -1047,8 +1047,8 @@
     });
 
     // Swiper 영역(.mySwiper)에서 마우스 휠 이벤트 처리
-    document.querySelector(".mySwiper").addEventListener(
-      "wheel",
+    document.querySelector('.mySwiper').addEventListener(
+      'wheel',
       function (event) {
         // 데스크탑이 아니라면(1540px 이하) 아무 동작도 하지 않음
         if (!isDesktop() || !isScrollActive) return;
@@ -1066,66 +1066,66 @@
     );
 
     function kkpcModal() {
-      kkpc.style.display = "flex";
-      document.body.style.overflow = "hidden"; // 스크롤 방지
+      kkpc.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // 스크롤 방지
     }
     function hyundaiModal() {
-      hyundai.style.display = "flex";
-      document.body.style.overflow = "hidden"; // 스크롤 방지
+      hyundai.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // 스크롤 방지
       isScrollActive = false; // 스크롤 이벤트 비활성화
-      const video = hyundai.querySelector("video");
+      const video = hyundai.querySelector('video');
       if (video) {
         video.currentTime = 0; // 비디오 시작 위치 초기화
         video.play(); // 비디오 재생
       }
     }
     function hyundaisteelModal() {
-      hyundaisteel.style.display = "flex";
-      document.body.style.overflow = "hidden"; // 스크롤 방지
+      hyundaisteel.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // 스크롤 방지
       isScrollActive = false; // 스크롤 이벤트 비활성화
-      const video = hyundaisteel.querySelector("video");
+      const video = hyundaisteel.querySelector('video');
       if (video) {
         video.currentTime = 0;
         video.play();
       }
     }
     function gangWhaModal() {
-      gangWha.style.display = "flex";
-      document.body.style.overflow = "hidden"; // 스크롤 방지
+      gangWha.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // 스크롤 방지
     }
     function mizeModal() {
-      mize.style.display = "flex";
-      document.body.style.overflow = "hidden"; // 스크롤 방지
+      mize.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // 스크롤 방지
     }
     function gweduModal() {
-      gwedu.style.display = "flex";
-      document.body.style.overflow = "hidden"; // 스크롤 방지
+      gwedu.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // 스크롤 방지
       isScrollActive = false; // 스크롤 이벤트 비활성화
-      const video = gwedu.querySelector("video");
+      const video = gwedu.querySelector('video');
       if (video) {
         video.currentTime = 0; // 비디오 시작 위치 초기화
         video.play(); // 비디오 재생
       }
     }
     function dashboardModal() {
-      dashboard.style.display = "flex";
-      document.body.style.overflow = "hidden"; // 스크롤 방지
+      dashboard.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // 스크롤 방지
       isScrollActive = false; // 스크롤 이벤트 비활성화
     }
     function cloudModal() {
-      cloud.style.display = "flex";
-      document.body.style.overflow = "hidden"; // 스크롤 방지
+      cloud.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // 스크롤 방지
       isScrollActive = false; // 스크롤 이벤트 비활성화
     }
     function portfolioModal() {
-      portfolio.style.display = "flex";
-      document.body.style.overflow = "hidden"; // 스크롤 방지
+      portfolio.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // 스크롤 방지
       isScrollActive = false; // 스크롤 이벤트 비활성화
     }
     // 모달 외부 클릭 및 Esc 키 이벤트
     modals.forEach((modal) => {
       // 모달 외부 클릭 시 모달 닫기
-      modal.addEventListener("click", function (event) {
+      modal.addEventListener('click', function (event) {
         if (event.target === modal) {
           // 모달 전체를 감지하되 컨테이너 외부 클릭만 닫기
           closeModal(modal);
@@ -1133,16 +1133,16 @@
       });
 
       // Esc 키 눌렀을 때 모달 닫기
-      window.addEventListener("keydown", function (event) {
-        if (event.key === "Escape" && modal.style.display === "flex") {
+      window.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && modal.style.display === 'flex') {
           closeModal(modal);
         }
       });
     });
-    document.querySelectorAll(".modal_closebtn").forEach((btn) => {
-      btn.addEventListener("click", function (event) {
+    document.querySelectorAll('.modal_closebtn').forEach((btn) => {
+      btn.addEventListener('click', function (event) {
         // 클릭한 버튼의 가장 가까운 모달 요소를 찾습니다.
-        const modal = btn.closest(".modal");
+        const modal = btn.closest('.modal');
         if (modal) {
           closeModal(modal);
         }
@@ -1150,95 +1150,95 @@
     });
     // 버튼 클릭 시 맨 위로 이동
     function topBtn() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    document.addEventListener("scroll", () => {
+    document.addEventListener('scroll', () => {
       const windowHeight = window.innerHeight;
       // .main 섹션 처리
-      const mainSection = document.querySelector(".main");
+      const mainSection = document.querySelector('.main');
       const mainTop = mainSection.getBoundingClientRect().top;
       const mainBottom = mainSection.getBoundingClientRect().bottom;
-      const topbtn = document.querySelector(".top_btn");
+      const topbtn = document.querySelector('.top_btn');
 
       if (mainTop <= windowHeight * 0.8 && mainBottom >= 0) {
-        topbtn.style.display = "none"; // .main 영역 안에서는 버튼 숨김
+        topbtn.style.display = 'none'; // .main 영역 안에서는 버튼 숨김
       } else {
-        topbtn.style.display = "block"; // .main 영역 밖에서는 버튼 표시
+        topbtn.style.display = 'block'; // .main 영역 밖에서는 버튼 표시
       }
 
       // .about 섹션 처리
-      const aboutSection = document.querySelector(".about");
+      const aboutSection = document.querySelector('.about');
       const aboutTop = aboutSection.getBoundingClientRect().top;
-      const aboutA = document.querySelector(".about_a");
+      const aboutA = document.querySelector('.about_a');
 
       if (aboutTop <= windowHeight * 0.8) {
-        aboutSection.classList.add("about_view");
-        aboutA.classList.add("on");
-        topbtn.style.display = "block";
+        aboutSection.classList.add('about_view');
+        aboutA.classList.add('on');
+        topbtn.style.display = 'block';
       } else {
-        aboutA.classList.remove("on");
+        aboutA.classList.remove('on');
       }
 
       // .portfolio 섹션 처리
-      const portfolioSection = document.querySelector(".portfolio");
+      const portfolioSection = document.querySelector('.portfolio');
       const portfolioTop = portfolioSection.getBoundingClientRect().top;
-      const portfolioA = document.querySelector(".portfolio_a");
+      const portfolioA = document.querySelector('.portfolio_a');
 
       if (portfolioTop <= windowHeight * 0.8) {
-        portfolioA.classList.add("on");
-        aboutA.classList.remove("on");
+        portfolioA.classList.add('on');
+        aboutA.classList.remove('on');
       } else {
-        portfolioA.classList.remove("on");
+        portfolioA.classList.remove('on');
       }
 
       // .contact 섹션 처리
-      const contactSection = document.querySelector(".contact");
+      const contactSection = document.querySelector('.contact');
       const contactTop = contactSection.getBoundingClientRect().top;
-      const contactA = document.querySelector(".contact_a");
+      const contactA = document.querySelector('.contact_a');
 
       if (contactTop <= windowHeight * 0.8) {
-        contactSection.classList.add("contact_view");
-        contactA.classList.add("on");
-        aboutA.classList.remove("on");
-        portfolioA.classList.remove("on");
+        contactSection.classList.add('contact_view');
+        contactA.classList.add('on');
+        aboutA.classList.remove('on');
+        portfolioA.classList.remove('on');
       } else {
-        contactA.classList.remove("on");
+        contactA.classList.remove('on');
       }
     });
 
     function hamburger() {
-      currentMenu = "hamburger";
+      currentMenu = 'hamburger';
       isScrollActive = isDesktop();
-      hamburgediv.style.display = "flex";
-      bentodiv.style.display = "none";
-      document.querySelector(".ha_img").style.display = "flex";
-      document.querySelector(".hd_img").style.display = "none";
-      document.querySelector(".bd_img").style.display = "flex";
-      document.querySelector(".ba_img").style.display = "none";
-      header.classList.add("hide");
-      document.body.classList.remove("bento_mode");
+      hamburgediv.style.display = 'flex';
+      bentodiv.style.display = 'none';
+      document.querySelector('.ha_img').style.display = 'flex';
+      document.querySelector('.hd_img').style.display = 'none';
+      document.querySelector('.bd_img').style.display = 'flex';
+      document.querySelector('.ba_img').style.display = 'none';
+      header.classList.add('hide');
+      document.body.classList.remove('bento_mode');
     }
 
     function bento() {
-      currentMenu = "bento";
+      currentMenu = 'bento';
       isScrollActive = false; // 스크롤 이벤트 비활성화
-      bentodiv.style.display = "grid";
-      hamburgediv.style.display = "none";
-      document.querySelector(".ha_img").style.display = "none";
-      document.querySelector(".hd_img").style.display = "flex";
-      document.querySelector(".bd_img").style.display = "none";
-      document.querySelector(".ba_img").style.display = "flex";
-      document.querySelector(".portfolio").style.height = "100%";
-      header?.classList.remove("hide");
-      document.body.classList.add("bento_mode");
+      bentodiv.style.display = 'grid';
+      hamburgediv.style.display = 'none';
+      document.querySelector('.ha_img').style.display = 'none';
+      document.querySelector('.hd_img').style.display = 'flex';
+      document.querySelector('.bd_img').style.display = 'none';
+      document.querySelector('.ba_img').style.display = 'flex';
+      document.querySelector('.portfolio').style.height = '100%';
+      header?.classList.remove('hide');
+      document.body.classList.add('bento_mode');
     }
 
     function closeModal(modal) {
-      modal.style.display = "none";
-      document.body.style.overflow = ""; // 배경 스크롤 복원
+      modal.style.display = 'none';
+      document.body.style.overflow = ''; // 배경 스크롤 복원
       // 비디오 처리
-      const video = modal.querySelector("video");
+      const video = modal.querySelector('video');
       if (video) {
         video.pause(); // 비디오 일시 정지
         video.currentTime = 0; // 비디오 시작 위치 초기화
@@ -1252,11 +1252,11 @@
       }
       if (!isDesktopScroll()) return; // 데스크탑 상태가 아니면 이벤트 등록하지 않음
 
-      const elm = document.querySelectorAll(".section");
+      const elm = document.querySelectorAll('.section');
       const elmCount = elm.length;
 
       elm.forEach(function (item, index) {
-        item.addEventListener("mousewheel", function (event) {
+        item.addEventListener('mousewheel', function (event) {
           // 스크롤 이벤트 활성화 상태가 아니면 이벤트 종료
           if (!isScrollActive) return;
 
@@ -1287,26 +1287,26 @@
             } catch (e) {}
           }
 
-          window.scrollTo({ top: moveTop, left: 0, behavior: "smooth" });
+          window.scrollTo({ top: moveTop, left: 0, behavior: 'smooth' });
         });
       });
     };
     (function () {
-      const header = document.querySelector("header");
-      const portfolio = document.querySelector("#portfolio");
+      const header = document.querySelector('header');
+      const portfolio = document.querySelector('#portfolio');
 
       if (!header || !portfolio) return;
 
       const observer = new IntersectionObserver(
         ([entry]) => {
-          const isHamburger = currentMenu === "hamburger";
+          const isHamburger = currentMenu === 'hamburger';
           const isWideScreen = isDesktop();
 
           // 포트폴리오 영역에 들어왔고 조건이 맞으면
           if (entry.isIntersecting && isHamburger && isWideScreen) {
-            header.classList.add("hide");
+            header.classList.add('hide');
           } else {
-            header.classList.remove("hide");
+            header.classList.remove('hide');
           }
         },
         {
